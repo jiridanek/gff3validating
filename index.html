@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<h1>The genomes@fi GFF3 validating service</h1>
+Maximal allowed size of the file is 500 MB. If the file is larger than that,
+the validating service will display 500 Internal server error page.
+<form action="http://127.0.0.1/cgi-bin/fcgidemo.fcgi" method="post" enctype="multipart/form-data">
+<table>
+<tr><td>
+Find
+</td><td>
+<input type="file" name="soubor" tabindex="0"><br>
+</td>
+</tr>
+</table>
+<input type="submit" name="submit" value="Upload">
+</form>
+</body>
+</html>
