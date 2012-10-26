@@ -32,7 +32,7 @@ func main () {
 			part, err := reader.NextPart()
 			if err == io.EOF {
 				log.Printf("EOF\n")
-				return
+				break
 			}
 			if err != nil {
 				view.ErrorTmpl.Execute(w, view.Error{err, "The file was not sent or received properly"})
